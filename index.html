@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jogo da Velha</h1>
+    <h2>Jogador da vez: <span id="JogadorDaVez"></span></h2>
+    <h3><span id="jogadorVencedor"></span></h3>
+  </header>
+
+  <main>
+    <div class="tile_row">
+      <span class="tile"></span>
+      <span class="tile"></span>
+      <span class="tile"></span>
+    </div>
+    <div class="tile_row">
+      <span class="tile"></span>
+      <span class="tile"></span>
+      <span class="tile"></span>
+    </div>
+    <div class="tile_row">
+      <span class="tile"></span>
+      <span class="tile"></span>
+      <span class="tile"></span>
+    </div>
+    <div class="button">
+      <button id="buttonOne" onclick="iniciarPartida()">JOGAR</button>
+      <button id="buttonTwo" onclick="reiniciar()">REINICIAR</button>
+    </div>
+    <footer>
+      <div class="pontuacao">
+        <h3>Jogadores</h3>
+        <h2><img class="estrela"src="img/estrela.png" 
+  style ="visibility:hidden"><span id="j1">Jogador 1</span></h2>
+        <h2><img class="estrela"src="img/estrela.png" style="visibility: hidden;"><span id="j2">Jogador 2</span></h2>
+      </div>
+      <div class="tempo">
+        <h3>Tempo</h3>
+        <h2>Atual:<span id="tempoPartida"></span></h2>
+        <h2>Recorde: <span id="tempoRecorde"></span></h2>
+      </div>
+    </footer>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
